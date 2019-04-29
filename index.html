@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- To indicate that your HTML content uses HTML5, simply use html-->
+<!-- will cause even browsers that don't presently support HTML5 to enter into standards mode, which means that they'll interpret the long-established parts of HTML in an HTML5-compliant way while ignoring the new features of HTML5 they don't support -->
+
+<!-- <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. -->
+<html lang="en">
+
+<!-- <head> element provides general information (metadata) about the document, including its title and links to its scripts and style sheets -->
+<head>
+  <!-- tell the browser which set of characters you'll be using -->
+  <meta charset="UTF-8">
+  <!-- The browser's viewport is area of the window in which web content can be seen. -->
+  <!-- The width property controls the size of the viewport. It can be set to a specific number of pixels like width=600 or to the special value device-width, which is the width of the screen in CSS pixels at a scale of 100%. -->
+  <!-- The initial-scale property controls the zoom level when the page is first loaded.  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tells Internet Explorer to use the highest mode available to that version of IE -->
+  <!-- edge is Microsoft's new web browser -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- defines the title of the document, shown in a browser's title bar or on the page's tab -->
+  <title>My Awesome Webpage</title>
+
+  <!-- A CSS Reset (or “Reset CSS”) is a short, often compressed (minified) set of CSS rules that resets the styling of all HTML elements to a consistent baseline. In case you didn't know, every browser has its own default 'user agent' stylesheet, that it uses to make unstyled websites appear more legible. -->
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<!-- <body> Element represents the content of an HTML document -->
+<body>
+  <!-- <header> element represents introductory content, typically a group of introductory or navigational aids -->
+  <header>
+    <!-- <div class="left"> -->
+    <!-- <h1>–<h6> elements represent six levels of section headings. <h1> is the highest section level and <h6> is the lowest. -->
+    <!-- Do not use lower levels to decrease heading font size: use the CSS font-size property instead -->
+    <!-- Avoid skipping heading levels: always start from <h1>, next use <h2> and so on. -->
+    <!-- You should consider avoiding using <h1> more than once on a page. -->
+    <h1 class="left">My Awesome Webpage</h1>
+    <!-- </div> -->
+    <!-- <div class="right"> -->
+    <!-- <nav> element represents a section of a page whose purpose is to provide navigation links -->
+    <nav class="right">
+      <!-- <ul> element represents an unordered list of items -->
+      <ul>
+        <!-- link to sections in the html document -->
+        <!-- <a> element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL -->
+        <!-- A URL fragment is a name preceded by a hash mark (#), which specifies an internal target location (an ID of an HTML element) within the current document -->
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+  </header>
+
+  <!-- main element represents the dominant content of the body of a document -->
+  <main>
+    <!-- section element represents a standalone section — which doesn't have a more specific semantic element to represent it -->
+    <section id="about">
+      <!-- <div class="left"> -->
+      <h2>About Me</h2>
+      <!-- </div> -->
+      <!-- <div class="right"> -->
+      <!-- <p> element represents a paragraph of text -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse earum dolorem temporibus officia distinctio iste ipsam fugiat! Facere molestiae, eius totam doloremque sit odio autem, aliquam laboriosam fuga. Nisi, pariatur.</p>
+      <!-- </div> -->
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quaerat veritatis ipsam maxime, officia sapiente deserunt ipsa, minima iure, blanditiis dicta. Cumque, esse fuga temporibus quas similique ipsum officia earum.</p>
+      <ul class="gallery">
+        <!-- <img> element embeds an image into the document -->
+        <!-- alt This attribute defines the alternative text describing the image. Users will see this text displayed if the image URL is wrong, the image is not in one of the supported formats, or if the image is not yet downloaded -->
+        <!-- Omitting alt attribute altogether indicates that the image is a key part of the content, and no textual equivalent is available. Setting this attribute to an empty string (alt="") indicates that this image is not a key part of the content, and that non-visual browsers may omit it from rendering -->
+        <li class="image"><img src="https://www.fillmurray.com/300/200" alt="bill murray image"></li>
+        <li class="image"><img src="https://www.fillmurray.com/284/196" alt="bill murray image"></li>
+        <li class="image"><img src="https://www.fillmurray.com/140/100" alt="bill murray image"></li>
+        <li class="image"><img src="https://www.fillmurray.com/140/200" alt="bill murray image"></li>
+      </ul>
+    </section>
+    <section id="contact">
+      <!-- <div class="left"> -->
+      <h2>Contact Me</h2>
+      <div class="contact-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <!-- </div> -->
+        <!-- <div class="right"></div> -->
+        <ul>
+          <li><a href="mailto:hi@me.com">hi@me.com</a></li>
+          <li><a href="tel:55555555555">(555) 555-5555</a></li>
+          <li>100Anywhere Way<br>Anytown, XX 55555</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+
+
+</html>
